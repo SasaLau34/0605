@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>事件处理练习</title>
+</head>
+<body>
+    <h3>事情处理的练习</h3>
+    <span class="btn"
+          onmouseover="over(this);"
+          onmouseout="out(this);"
+          onmousedown="down(this);"
+          onmouseup="up(this);"
+          
+        >点我 </span>
+
+    <script>
+        function down(elem) {
+            elem.style.fontWeight = "bold";
+        }
+        function over(elem) {
+            elem.style.backgroundColor = "#CBB193";  
+        }
+        function out(elem) {
+            elem.style.backgroundColor = "lightblue"; 
+        }
+        function up(elem) {
+            elem.style.fontWeight = "normal";
+        }
+    </script>
+</body>
+</html>

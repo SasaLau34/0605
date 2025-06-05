@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>购物车金额计算</title>
+</head>
+<body>
+    <h2>购物车金额：$<span id="total">0</span></h2>
+    <button onclick="clearCart()">清空购物车</button>
+
+    <hr>
+
+    <div>
+        <p>TFBOYS 蓝牙音响 $350</p>
+        <button onclick="addToCart(350)">加入购物车</button><br>
+        <img src="https://media.etmall.com.tw/nximg/00100001417/100001417299/100001417299_xxl.jpg?t=21850165466" width="200">
+    </div>
+
+    <div>
+        <p>TFBOYS LED灯光 $190</p>
+        <button onclick="addToCart(190)">加入购物车</button><br>
+        <img src="https://gw.alicdn.com/imgextra/i4/2210609604743/O1CN01NORL541kuLTFDpgEg_!!2210609604743.jpg_Q75.jpg_.webp" width="200">
+    </div>
+
+    <script>
+        let total = 0;
+
+        function addToCart(price) {
+            total += price;
+            document.getElementById("total").innerText = total;
+        }
+
+        function clearCart() {
+            total = 0;
+            document.getElementById("total").innerText = total;
+        }
+    </script>
+</body>
+</html>
