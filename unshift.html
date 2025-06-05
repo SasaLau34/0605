@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Arrays - Unshift</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The Unshift() Method</h2>
+
+    <p>The Unshift() method adds a new element to the beginning of the array:</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const foods = ["Fried Chicken", "Fried Rice", "Soup", "Pancake"];
+        const added = foods.unshift("Milk Tea");  
+
+        document.getElementById("demo1").innerHTML = foods.unshift();
+        document.getElementById("demo2").innerHTML = foods;
+    </script>
+</body>
+</html>
